@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import { I18nContext } from './hooks/useI18n'
 import BuilderPage from './pages/BuilderPage'
 import HomePage from './pages/HomePage'
@@ -39,6 +40,7 @@ export default function App() {
           </div>
         )}
       </div>
+      <Analytics />
     </I18nContext.Provider>
   )
 }
